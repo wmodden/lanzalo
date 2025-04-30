@@ -1,17 +1,27 @@
 ---
+import Header from '../components/Header.astro';
 import '../global.css';
+
+type Props = {
+  title: string;
+};
+
+const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang='en'>
+<html lang='en' class='h-full bg-neutral-950 text-base antialiased'>
   <head>
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width' />
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='generator' content={Astro.generator} />
-    <title>Astro Basics</title>
+    <title>Lanzalo | {title}</title>
   </head>
-  <body>
-    <slot />
+  <body class='flex min-h-screen flex-col m-2 md:m-4 bg-white rounded-md'>
+    <Header />
+    <main>
+      <slot />
+    </main>
   </body>
 </html>
