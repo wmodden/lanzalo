@@ -3,7 +3,7 @@ import NavigationLink from './NavigationLink.astro';
 ---
 
 <header>
-  <div class='mx-auto px-6 lg:px-8 mt-6'>
+  <div class='mx-auto px-6 max-w-5xl lg:px-8 mt-6'>
     <div class='mx-auto lg:max-w-none'>
       <div class='flex items-center justify-between'>
         <!-- Logo -->
@@ -69,10 +69,10 @@ import NavigationLink from './NavigationLink.astro';
           </svg>
         </a>
         <!-- Navigation items -->
-        <nav class='flex items-center gap-2'>
-          <NavigationLink href='/'>Contact</NavigationLink>
-          <NavigationLink href='/'>Work</NavigationLink>
-          <NavigationLink href='/'>Process</NavigationLink>
+        <nav class='flex items-center gap-x-1 md:gap-x-2'>
+          <NavigationLink href='/'>Contacto</NavigationLink>
+          <NavigationLink href='/'>Trabajo</NavigationLink>
+          <NavigationLink href='/'>Proceso</NavigationLink>
         </nav>
       </div>
     </div>
